@@ -11,6 +11,7 @@ pipeline{
                 echo('This is the build stage')
                 sh '''
                    ssh -i /var/lib/jenkins/project1.pem -t -o StrictHostKeyChecking=no ubuntu@ec2-34-229-57-35.compute-1.amazonaws.com
+                   sudo rm -rf ~/nodeapp
                    mkdir ~/node_app
                    cd ~/node_app
                    sudo git init
