@@ -13,6 +13,7 @@ pipeline{
                    ssh -i /var/lib/jenkins/project1.pem -t -o StrictHostKeyChecking=no ubuntu@ec2-34-229-57-35.compute-1.amazonaws.com
                    mkdir ~/node_app
                    cd ~/node_app
+                   sudo git init
                    sudo git remote add origin https://github.com/Fearreece/nodejs_app.git
                    sudo git pull origin main
                    sudo npm install
