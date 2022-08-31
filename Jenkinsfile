@@ -15,6 +15,7 @@ pipeline{
                    mkdir ~/node_app
                    cd ~/node_app
                    sudo git init
+                   sudo git config --global --add safe.directory /var/lib/jenkins/node_app
                    sudo git remote add origin https://github.com/Fearreece/node_app.git
                    sudo git pull origin main
                    sudo npm install
