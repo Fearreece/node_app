@@ -10,7 +10,7 @@ pipeline{
             steps{
                 echo('This is the build stage')
                 sh '''
-                   ssh -i /var/lib/jenkins/project1.pem -t project.pem ubuntu@ec2-34-229-57-35.compute-1.amazonaws.com
+                   ssh -i /var/lib/jenkins/project1.pem -t ubuntu@ec2-34-229-57-35.compute-1.amazonaws.com
                    mkdir ~/node_app
                    cd ~/node_app
                    sudo git remote add origin https://github.com/Fearreece/nodejs_app.git
