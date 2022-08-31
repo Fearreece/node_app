@@ -15,7 +15,7 @@ pipeline{
                    mkdir ~/node_app
                    cd ~/node_app
                    sudo git init
-                   sudo git remote add origin https://github.com/Fearreece/nodejs_app.git
+                   sudo git remote add origin https://github.com/Fearreece/node_app.git
                    sudo git pull origin main
                    sudo npm install
                    sudo npm start
